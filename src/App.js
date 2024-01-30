@@ -3,7 +3,7 @@ import HomePage from './pages/Homepage';
 import Connexion from './pages/Connexion';
 import Contact from './pages/Contact';
 import Mentions from './pages/Mentionslegales';
-import Recherche from './pages/Recherche';
+import Panier from './pages/Panier';
 import Services from './pages/Services';
 
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/login" element={<Connexion />} />
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/mentions" element={<Mentions />} />
-        <Route path="/search" element={<Recherche />} />
+        <Route path="/panier" element={<Panier />} />
         <Route path="/services" element={<Services />} />      
       </Routes>
     </BrowserRouter>
