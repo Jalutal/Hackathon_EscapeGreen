@@ -1,0 +1,20 @@
+@import '../../sass/abstract/_variables.scss';
+@import '../../sass/reset/_reset.scss';
+
+.header_color {
+    background-color: $header_color;
+    height: 6vh;
+}
+
+.nav_header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $background_grey;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    padding-right: 10px;    
+}

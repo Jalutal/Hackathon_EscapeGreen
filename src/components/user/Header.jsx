@@ -1,17 +1,20 @@
+import "./header.scss";
+import img from '../../assets/img/ChildWood.ai.png';
 
 const Header = () => {
 
     return (
         <>
-        <p>Ceci est le Header</p>
-        <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/panier">Panier</a></li>
-            <li><a href="/login">Connexion</a></li>
-            <li><a href="/contact">Contact</a></li>
+        <div className="header_color"></div>
+        <div className="nav_header">
+        <div><a href="/"><img src={img}></img></a></div>
+        <ul className="nav">
+            <li><a href="/login">MON COMPTE</a></li>
+            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/services">SERVICES</a></li>
+            <li><a href="/panier">PANIER</a></li>          
         </ul>
-        </>
+        </div></>
     )
 }
 

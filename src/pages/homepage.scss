@@ -1,0 +1,107 @@
+@import '../sass/abstract/_variables.scss';
+
+.bg_home_01 {
+    background-image: url(../assets/img/pexels-karolina.png);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 50vh;
+    margin: 0px 0px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search_container h2 {
+    font-size: 1.9em;
+}
+
+.search_bar {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 1px solid black;
+}
+
+.search_inner_bar {    
+    width: 90%;
+    height: 90px;
+    border: none;
+    font-size: 1.9em;
+}
+
+.img_sponsors {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.img_sponsors img {
+    height:80px;
+    width: 9%;
+    margin-top: 35px;
+}
+
+.title {
+    text-align: center;
+    background-color: #569143; 
+}
+
+.title h1 {
+    font-family: Arial;
+    font-size: 15em;
+    color: #90B878;
+    margin: 0;
+    white-space: nowrap;
+}
+.bg_home_02 {
+    background-image: url(../assets/img/neige-bois-vacances.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+}
+
+.decouvrez {
+    background: rgba(154, 152, 152, 0.28);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.01);  
+    width: 450px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-left: 15px;
+    position: relative;
+    top: 100px;
+    overflow: visible;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.more {
+    position: relative;
+    top: 25px;
+    left: 300px;
+    background-color: #569143;
+    width: 150px;
+    padding: 10px 50px;
+}
+
+.landscape {
+    display: flex;
+    justify-content: space-between;
+}
