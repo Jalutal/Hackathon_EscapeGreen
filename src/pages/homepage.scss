@@ -33,6 +33,7 @@
     align-items: center;
     width: 90%;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .search_inner_bar {    
@@ -45,13 +46,40 @@
 .img_sponsors {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 40px;
 }
 
 .img_sponsors img {
-    height:80px;
-    width: 9%;
     margin-top: 35px;
+}
+
+.sponso01 {
+    height:150px;
+}
+
+.sponso02 {
+    height:150px;
+}
+
+.sponso03 {
+    height:90px;
+}
+
+.sponso04 {
+    height:100px;
+}
+
+.sponso05 {
+    height:100px;
+}
+
+.sponso06 {
+    height:150px;
+}
+
+.sponso07 {
+    height:150px;
 }
 
 .title {
@@ -73,6 +101,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     color: white;
+    overflow: visible;
 }
 
 .decouvrez {
@@ -103,5 +132,54 @@
 
 .landscape {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    position: relative;
+    top: 50vh;
+
+}
+
+.bg_home_03 {
+    background-image: url(../assets/img/pexels-cottonbro-studio.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: white;
+    margin: 0;
+}
+
+.flex_logo {
+    position: relative;
+    top: 350px;
+    right: 50px;
+    text-align: end;
+}
+
+.flex_logo img {
+    width: 300px;
+}
+
+// .sepia {    
+//     width: 100%;
+//     height: 10vh; // Ajuste la hauteur selon tes besoins
+//     background-color: rgba(168, 125, 75, 0.5); // Couleur sépia transparente
+// }
+
+.bg_home_04 {
+    background-color: #D6D687;
+    height: 90vh;
+    color: white;
+    margin: 0;
+    z-index: 3;
+}
+
+.bg_home_04 h2 {
+    position: relative;
+    top: -20vh;
+    font-family: Arial;
+    font-size: 13em;
+    color: white;
+    opacity: 65%;
+    margin: 0;
+    text-align: center;
 }

@@ -13,6 +13,7 @@ import search from '../assets/img/search.png';
 import landscape01 from '../assets/img/landscape01.png';
 import landscape02 from '../assets/img/landscape02.png';
 import landscape03 from '../assets/img/landscape03.png';
+import logo from '../assets/img/ChildWood.ai.png';
 
 
 const HomePage = () => {
@@ -28,14 +29,15 @@ const HomePage = () => {
                     <img src={search} />
                 </div>
                 <div className='img_sponsors'>
-                    <img src={sponso01} />
-                    <img src={sponso02} />
-                    <img src={sponso03} />
-                    <img src={sponso04} />
-                    <img src={sponso05} />
-                    <img src={sponso06} />
-                    <img src={sponso07} />
+                    <img src={sponso01} className='sponso01'/>
+                    <img src={sponso02} className='sponso02'/>
+                    <img src={sponso03} className='sponso03'/>
+                    <img src={sponso04} className='sponso04'/>
+                    <img src={sponso05} className='sponso05'/>
+                    <img src={sponso06} className='sponso06'/>
+                    <img src={sponso07} className='sponso07'/>
                 </div>
+
             </div>
         </div>
         <div className='title'>
@@ -52,7 +54,14 @@ const HomePage = () => {
                 <div><img src={landscape01} /></div>
                 <div><img src={landscape02} /></div>
                 <div><img src={landscape03} /></div>
-            </div>
+            </div>            
+        </div>
+        <div className='bg_home_03'>
+            
+            <div className='flex_logo'><img src={logo} /></div>        
+        </div>
+        <div className='bg_home_04'>
+            <h2>Voyage en</h2><h2> pleine nature</h2>
         </div>
         <h1><strong>Escape Green</strong> est une société spécialisée dans l'organisation de voyages en pleine nature.</h1>
         <div>
