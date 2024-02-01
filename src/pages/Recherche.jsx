@@ -4,6 +4,7 @@ import Footer from "../components/user/Footer";
 import style from "../assets/modules/Recherche.module.css";
 import ListServices from '../components/user/ListServices';
 
+
 const Recherche = () => {
     const [services, setServices] = useState([]);
 
@@ -69,22 +70,22 @@ const Recherche = () => {
             <>
             <Header />
             <main>
-                <h1>Recherche</h1>
+                <h1 className={style.searchpage}>Recherche de service</h1>
                 <form className={style.filters} onSubmit={handleSubmit}>
-                    <label htmlFor="city">Où
+                    <label htmlFor="city"><span>Où</span> : 
                         <input type="text" id="city" placeholder="Ville ou code postal" />
                     </label>
 
-                    <label htmlFor="dateDebut">Date de début
+                    <label htmlFor="dateDebut"><span>Date de début</span> : 
                         <input type="date" id="dateDebut" name="dateDebut" value={startDate} min={getTodayDate()} onChange={(e) => handleDateChange(e, 'startDate')} />
                     </label>
 
-                    <label htmlFor="dateFin">Date de fin
+                    <label htmlFor="dateFin"><span>Date de fin</span> : 
                         <input type="date" id="dateFin" name="dateFin" value={endDate} min={getTodayDate()} onChange={(e) => handleDateChange(e, 'endDate')} />
                     </label>
 
                     <div className={style.typeGroup}>
-                        <label>Types de service souhaité :</label>
+                        <label><span>Types de service souhaité</span> :</label>
                         <input type="checkbox" id="hebergement" name="hebergement" value="hebergement" />
                         <label htmlFor="hebergement">Hébergement</label>
 
@@ -100,8 +101,7 @@ const Recherche = () => {
                         <input type="checkbox" id="loc" name="loc" value="loc" />
                         <label htmlFor="loc">Location de véhicules</label>
                     </div>
-
-                    <label htmlFor="nbPeople">Nombre de personnes
+                    <label htmlFor="nbPeople"><span>Nombre de personnes</span> : 
                         <input type="number" id="nbPeople" min="1" placeholder="1" />
                     </label>
 

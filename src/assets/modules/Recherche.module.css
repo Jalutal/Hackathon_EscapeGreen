@@ -1,15 +1,47 @@
+main {
+    background-image: url(../../assets/img/pexels-karolina.png);
+    background-size: cover;
+    background-size: 100% 120%;
+    height: 100vh;
+}
+.searchpage {
+    text-align: center;
+    background-color: #292327;
+    color: white;
+    font-size: 3em;
+    width: 30%;
+    padding: 2px 2px;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
 .filters {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin: 0 auto;
     border: solid 2px red;
+    background: rgba(154, 152, 152, 0.28);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-size: 1.5em;
 }
-
+.filters span {
+    font-weight: bold;
+}
 .filters label {
     margin-bottom: 15px;
 }
-
+.filters input {
+    font-size: 1em;
+}
+.typeGroup{
+    margin-bottom: 15px;
+}
 .typeGroup label {
     margin-right: 30px;
 }

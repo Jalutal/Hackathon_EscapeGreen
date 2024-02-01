@@ -14,7 +14,7 @@ const Header = () => {
             <li><a href="/contact">CONTACT</a></li>
             <li><a href="/services">SERVICES</a></li>
             <li><a href="/panier">PANIER</a></li>
-            <li>RESERVATIONS</li>         
+            <li><a href="/recherche">RESERVATIONS</a></li>         
             <li>DEMANDER UN DEVIS GRATUIT</li> 
             <li>NOS PARTENAIRES</li>
         </ul>
