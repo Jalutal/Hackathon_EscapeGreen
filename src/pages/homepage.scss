@@ -1,110 +1,68 @@
-@import '../sass/abstract/_variables.scss';
-
-.bg_home_01 {
+// ################## BLOC 01 - SEARCH BAR #########################
+.bloc01 {
     background-image: url(../assets/img/pexels-karolina.png);
     background-size: cover;
-    background-position: center;
+    background-size: 100% 120%;
     height: 80vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-
-.search_container {
-    display: flex;
-    flex-direction: column;
+.search {
     width: 80%;
     height: 50vh;
     margin: 0px 0px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
 }
-
-.search_container h2 {
-    font-size: 1.9em;
-}
-
 .search_bar {
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
 .search_inner_bar {    
     width: 90%;
     height: 90px;
     border: none;
     font-size: 1.9em;
 }
-
 .img_sponsors {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    padding-top: 50px;
 }
-
-.img_sponsors img {
-    margin-top: 35px;
-}
-
-.sponso01 {
-    height:150px;
-}
-
-.sponso02 {
-    height:150px;
-}
-
-.sponso03 {
-    height:90px;
-}
-
-.sponso04 {
-    height:100px;
-}
-
-.sponso05 {
-    height:100px;
-}
-
-.sponso06 {
-    height:150px;
-}
-
-.sponso07 {
-    height:150px;
-}
-
-.title {
-    text-align: center;
-    background-color: #569143; 
-}
-
-.title h1 {
+// ################## BLOC 02 - TITLE ESCAPE GREEN #########################
+.bloc02 {
+        text-align: center;
+        background-color: #569143; 
+    }
+.bloc02 h1 {
     font-family: Arial;
     font-size: 15em;
     color: #90B878;
     margin: 0;
     white-space: nowrap;
 }
-.bg_home_02 {
+// ################## BLOC 03 - LANDSCAPES #########################
+.bloc03 {
     background-image: url(../assets/img/neige-bois-vacances.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 120vh;
     color: white;
     overflow: visible;
 }
-
-.decouvrez {
+.discover {
     background: rgba(154, 152, 152, 0.28);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1px);
@@ -119,8 +77,8 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     line-height: 1.8;
     font-size: 1.1em;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
 }
-
 .more {
     position: relative;
     top: 25px;
@@ -128,58 +86,483 @@
     background-color: #569143;
     width: 150px;
     padding: 10px 50px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+}
+.landscapes {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 180px;
 }
 
 .landscape {
-    display: flex;
-    justify-content: space-around;
     position: relative;
-    top: 50vh;
-
+    overflow-x: visible;
 }
-
-.bg_home_03 {
-    background-image: url(../assets/img/pexels-cottonbro-studio.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 90vh;
-    color: white;
-    margin: 0;
-}
-
-.flex_logo {
-    position: relative;
-    top: 350px;
-    right: 50px;
-    text-align: end;
-}
-
-.flex_logo img {
-    width: 300px;
-}
-
-// .sepia {    
-//     width: 100%;
-//     height: 10vh; // Ajuste la hauteur selon tes besoins
-//     background-color: rgba(168, 125, 75, 0.5); // Couleur sépia transparente
-// }
-
-.bg_home_04 {
-    background-color: #D6D687;
-    height: 90vh;
-    color: white;
-    margin: 0;
+.landscape_prices {
+    position: absolute;
+    background-color: #397E6B;
+    bottom: 50px;
+    left: -30px;
+    padding: 0 20px;
     z-index: 3;
+    font-size: 2em;
+    width: 40%;
 }
-
-.bg_home_04 h2 {
+.landscapes span {
+    font-size: 2.5em;
+}
+.landscapes img {
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+}
+// ################## BLOC 04 - VIDEO #########################
+.bloc04 {
     position: relative;
-    top: -20vh;
-    font-family: Arial;
-    font-size: 13em;
+    overflow: hidden;
+    height: 100vh;
+}
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+// ################## BLOC 05 - THUMBS #########################
+.bloc05 {
+    background-color: #D6D687;
+}
+.bloc05 .p {
+    text-align: center;
     color: white;
-    opacity: 65%;
-    margin: 0;
+    font-size: 10em;
+    font-weight: bold;
+    overflow: visible;
+    letter-spacing: 7px;
+}
+.bloc05header {
+    height: 18vh;
+    background-color: #E3E38A;
+    text-align: center;
+    color: white;
+    font-size: 10em;
+    line-height: 0.7;
+    font-weight: bold;
+    letter-spacing: 7px;
+}
+.thumbs_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 40px 120px;
+}
+.thumb_textup {
+    position: relative;
+    top: -630px;
+    height: 7vh;
+    overflow: visible;
+    padding-left: 5px;
+    background: rgba(154, 152, 152, 0.28);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    color: white;
+    text-align: center;
+    
+}
+.thumb_textup p {
+   background-color: #292327; 
+   width: 65%;   
+   margin: auto;
+   padding: 10px;
+   margin-top: 12px;
+   border-radius: 10px;
+}
+.thumb_textdown {
+    position: relative;
+    top: -72px;
+    height: 7vh;
+    overflow: visible;
+    padding-left: 5px;
+    background: rgba(154, 152, 152, 0.28);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    color: white;
     text-align: center;
 }
+.thumb_textdown p {
+    background-color: #292327; 
+    width: 65%;   
+    margin: auto;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 10px;
+ }
+ .thumbs img {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+ }
+ // ################## BLOC 06 - DETAIL #########################
+.bloc06 {
+    background-color: #292327;
+
+    color: white;
+}
+.bloc06 h3 {
+    text-align: center;
+    font-size: 5em;
+    padding-top: 30px;
+}
+.bloc06 .title1 {
+    position: relative;
+    left: 500px;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.bloc06 .text1 {
+    font-size: 3em;
+    width: 50%;
+    position: relative;
+    left: 100px;
+    font-weight: bold;
+}
+.bloc06 .title2 {
+    position: relative;
+    left: 1100px;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.bloc06 .text2 {
+    font-size: 3em;
+    width: 60%;
+    position: relative;
+    left: 640px;
+    font-weight: bold;
+}
+.bloc06 .title3 {
+    position: relative;
+    left: 400px;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.bloc06 .text3 {
+    font-size: 3em;
+    width: 60%;
+    position: relative;
+    left: 140px;
+    font-weight: bold;
+}
+.bloc06 .title4 {
+    position: relative;
+    left: 1400px;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.bloc06 .text4 {
+    font-size: 3em;
+    width: 60%;
+    position: relative;
+    left: 840px;
+    font-weight: bold;
+}
+.bloc06 .title5 {
+    position: relative;
+    left: 400px;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.bloc06 .text5 {
+    font-size: 3em;
+    width: 80%;
+    position: relative;
+    left: 150px;
+    font-weight: bold;
+}
+.bloc06 .title6 {
+    position: relative;
+    left: 1300px;
+    font-size: 5em;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.bloc06 .text6 {
+    font-size: 3em;
+    width: 80%;
+    position: relative;
+    left: 1200px;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+ // ################## BLOC 07 - EXPLANATIONS #########################
+.bloc07 {
+    background-color: #D6D687;
+}
+.bloc7text {
+    text-align: justify;
+    font-size: 1.6em;
+    padding: 0 150px;
+    margin-bottom: 40px;
+}
+.textone {
+    margin-top: 40px;
+}
+.bloc07 span {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @import '../sass/abstract/_variables.scss';
+
+// .bg_home_01 {
+//     background-image: url(../assets/img/pexels-karolina.png);
+//     background-size: cover;
+//     background-position: center;
+//     height: 80vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .search_container {
+//     display: flex;
+//     flex-direction: column;
+//     width: 80%;
+//     height: 50vh;
+//     margin: 0px 0px;
+//     background-color: white;
+//     padding: 20px;
+//     border-radius: 10px;
+// }
+
+// .search_container h2 {
+//     font-size: 1.9em;
+// }
+
+// .search_bar {
+//     margin: auto;
+//     text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 90%;
+//     border: 1px solid black;
+//     border-radius: 10px;
+// }
+
+// .search_inner_bar {    
+//     width: 90%;
+//     height: 90px;
+//     border: none;
+//     font-size: 1.9em;
+// }
+
+// .img_sponsors {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding-bottom: 40px;
+// }
+
+// .img_sponsors img {
+//     margin-top: 35px;
+// }
+
+// .sponso01 {
+//     height:150px;
+// }
+
+// .sponso02 {
+//     height:150px;
+// }
+
+// .sponso03 {
+//     height:90px;
+// }
+
+// .sponso04 {
+//     height:100px;
+// }
+
+// .sponso05 {
+//     height:100px;
+// }
+
+// .sponso06 {
+//     height:150px;
+// }
+
+// .sponso07 {
+//     height:150px;
+// }
+
+// .title {
+//     text-align: center;
+//     background-color: #569143; 
+// }
+
+// .title h1 {
+//     font-family: Arial;
+//     font-size: 15em;
+//     color: #90B878;
+//     margin: 0;
+//     white-space: nowrap;
+// }
+// .bg_home_02 {
+//     background-image: url(../assets/img/neige-bois-vacances.png);
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     height: 100vh;
+//     color: white;
+//     overflow: visible;
+// }
+
+// .decouvrez {
+//     background: rgba(154, 152, 152, 0.28);
+//     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+//     backdrop-filter: blur(1px);
+//     border: 1px solid rgba(255, 255, 255, 0.01);  
+//     width: 450px;
+//     padding-left: 20px;
+//     padding-top: 15px;
+//     margin-left: 15px;
+//     position: relative;
+//     top: 100px;
+//     overflow: visible;
+//     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+//     line-height: 1.8;
+//     font-size: 1.1em;
+// }
+
+// .more {
+//     position: relative;
+//     top: 25px;
+//     left: 300px;
+//     background-color: #569143;
+//     width: 150px;
+//     padding: 10px 50px;
+// }
+
+// .landscape {
+//     display: flex;   
+//     position: relative;
+//     justify-content: center;
+//     top: 32vh;
+//     gap: 100px;
+//     overflow: visible;
+//     z-index: 2
+// }
+
+// .landscape img {
+//     width: 80%;
+// }
+
+// .landscape p {
+//     position: relative;
+//     background-color: #397E6B;
+//     width: 35%;
+//     top: -100px;
+//     z-index: 3;
+//     font-size: 2em;
+// }
+
+// .landscape span {
+//     font-size: 2.1em;
+// }
+
+// .degrade {
+//     height: 10px;
+//     background-color: #778335;
+//     position: relative;
+//     top: 150px;
+//     z-index: 1
+// }
+
+// .bg_home_03 {
+//     background-image: url(../assets/img/pexels-studio.png);
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     height: 90vh;
+//     color: white;
+//     margin: 0;
+// }
+
+// // .flex_logo {
+// //     position: relative;
+// //     top: 350px;
+// //     right: 50px;
+// //     text-align: end;
+// // }
+
+// // .flex_logo img {
+// //     width: 300px;
+// // }
+
+// .video {
+//     position: relative;
+//     display: flex;
+//     top: 60px;
+   
+//     object-fit: cover;
+//     justify-content: center;
+//     margin: auto;
+//     border-radius: 15px;
+// }
+
+// // .video-bg {
+// //     position: absolute;
+// //     top: 0;
+// //     left: 0;
+// //     width: 100%;
+// //     height: 100%;
+// //     object-fit: cover;
+// // }
+
+// // .sepia {    
+// //     width: 100%;
+// //     height: 10vh; // Ajuste la hauteur selon tes besoins
+// //     background-color: rgba(168, 125, 75, 0.5); // Couleur sépia transparente
+// // }
+
+// .bg_home_04 {
+//     background-color: #D6D687;
+//     height: 90vh;
+//     color: white;
+//     margin: 0;
+//     z-index: 3;
+// }
+
+// .bg_home_04 h2 {
+//     position: relative;
+//     // top: -20vh;
+//     font-family: Arial;
+//     font-size: 13em;
+//     color: white;
+//     opacity: 65%;
+//     margin: 0;
+//     text-align: center;
+// }
