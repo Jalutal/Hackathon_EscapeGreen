@@ -4,6 +4,7 @@ import Footer from '../components/user/Footer';
 
 
 const Mentions = () => {
+  
   return (
       <main>
         <div>
