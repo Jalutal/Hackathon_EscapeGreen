@@ -1,0 +1,42 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    border: solid 2px red;
+}
+
+.filters label {
+    margin-bottom: 15px;
+}
+
+.typeGroup label {
+    margin-right: 30px;
+}
+
+.typeGroup input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.subBtn {
+    display: block;
+    border: none;
+    background: orange;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.services {
+    border: solid 2px purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 40px auto 0;
+}
