@@ -1,0 +1,35 @@
+@import '../../sass/abstract/_variables.scss';
+@import '../../sass/reset/_reset.scss';
+
+
+footer {
+    background-color: #DFDFDF;
+}
+.social {
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    padding: 30px 10px;
+}
+.mentions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mention_div {
+    width: 18%;
+}
+.address {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.footer_color {
+    background-color: $header_color;
+    height: 10vh;
+    text-align: center;
+    padding-top: 25px;
+    color: white;
+    font-weight: bold;
+}
