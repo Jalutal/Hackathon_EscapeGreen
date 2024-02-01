@@ -5,6 +5,7 @@ import Contact from './pages/Contact';
 import Mentions from './pages/Mentionslegales';
 import Panier from './pages/Panier';
 import Services from './pages/Services';
+import Recherche from './pages/Recherche';
 
 
 
@@ -19,7 +20,8 @@ function App() {
         <Route path="/contact" element={<Contact />} /> 
         <Route path="/mentions" element={<Mentions />} />
         <Route path="/panier" element={<Panier />} />
-        <Route path="/services" element={<Services />} />      
+        <Route path="/services" element={<Services />} />
+        <Route path="/recherche" element={<Recherche />} />
       </Routes>
     </BrowserRouter>
     </>
