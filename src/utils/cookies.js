@@ -22,7 +22,7 @@ const SetCookieExpirationByDate = () =>{
 }
 
 // Function
-const getCookie = (cookieName) =>{
+const getCookieData = (cookieName = "") =>{
     // Verifie si cookieName existe, sinon retourn null
     let cookie
     try {
@@ -35,7 +35,7 @@ const getCookie = (cookieName) =>{
     }
 }
 
-const setCookie = (cookieName, cookieData, expirationDay = null) =>{
+const setCookieData = (cookieName = "", cookieData, expirationDay = null) =>{
     // Créer Un cookie cookieName
     // Avec le nombre de Jour avant expiration (si défini)
     try {
@@ -51,7 +51,7 @@ const setCookie = (cookieName, cookieData, expirationDay = null) =>{
     
 }
 
-const removeCookie = (cookieName) =>{
+const removeCookieData = (cookieName = "") =>{
     // Supprime un cookie existant
     try {
         return Cookies.remove(cookieName)
@@ -62,5 +62,6 @@ const removeCookie = (cookieName) =>{
 }
 // Export
 module.exports = {
-    getCookie, setCookie, removeCookie
+    // Cookies, 
+    getCookieData, setCookieData, removeCookieData
 }
