@@ -9,6 +9,8 @@ const Services = () => {
     const prixTTC = prixHT * (1 + tauxTVA / 100); // Calcul du prix TTC    
     console.log(`Le prix TTC est de ${prixTTC.toFixed(2)}€`); // Affichage du résultat
 
+    // 
+
 
     return(
         <>
