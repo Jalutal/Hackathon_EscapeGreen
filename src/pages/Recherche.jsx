@@ -109,6 +109,7 @@ const Recherche = () => {
                 </form>
 
                 {/* Utilisation du composant ListServices avec les propriétés des services */}
+                <div className={style.services}>
                 {services.map((service) => (
                     <ListServices
                         key={service.id}
@@ -119,6 +120,7 @@ const Recherche = () => {
                         prixTTC={service.prixTTC}
                     />
                 ))}
+                </div>
             </main>
 
             <Footer />    

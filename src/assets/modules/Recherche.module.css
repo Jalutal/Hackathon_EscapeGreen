@@ -30,3 +30,13 @@
     width: fit-content;
     margin: 0 auto;
 }
+
+.services {
+    border: solid 2px purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 40px auto 0;
+}
