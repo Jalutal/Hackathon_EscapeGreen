@@ -33,3 +33,17 @@ footer {
     color: white;
     font-weight: bold;
 }
+// ################## MEDIA QUERIES #########################
+/* ##### TABLETTES #### */
+@media (max-width: 768px) {
+    .mentions img {
+        display: none;
+    }
+    .mentions {
+        justify-content: center;
+    }
+    .mention_div {
+        width: 25%;
+        padding-bottom: 15px;
+    }
+}

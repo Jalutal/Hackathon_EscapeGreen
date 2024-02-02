@@ -303,7 +303,7 @@
     font-weight: bold;
     padding-bottom: 35px;
 }
- // ################## BLOC 07 - EXPLANATIONS #########################
+// ################## BLOC 07 - EXPLANATIONS #########################
 .bloc07 {
     background-color: #D6D687;
 }
@@ -319,8 +319,88 @@
 .bloc07 span {
     font-weight: bold;
 }
-
-
+// ################## MEDIA QUERIES #########################
+/* ##### TABLETTES #### */
+@media (max-width: 768px) {
+    .bloc02 h1 {
+        font-size: 6em;
+    }
+    .bloc03 {
+        background-size: 150% 100%;
+        height: 180vh;
+    }
+    .discover {
+        top: 50px;
+    }
+    .landscapes {
+        top: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }    
+    .landscape_prices {
+        font-size: 0.8em;
+        width: 23%;
+    }
+    .landscapes span {
+        font-size: 2.5em;
+    }
+    .landscapes img {
+        max-width: 250px;
+    }
+    .bloc05 .p {
+        font-size: 6em;
+    }
+    .bloc05header {
+        height: 11.5vh;
+        font-size: 6em;
+    }
+    .thumbs_container {
+        gap: 0px;
+    }
+    .bloc06 h3 {
+        text-align: center;
+        font-size: 4em;
+        padding-top: 30px;
+    }
+    .bloc06 .title1 {
+        left: 200px;
+    }   
+    .bloc06 .title2 {
+        left: 500px;
+    }
+    .bloc06 .text2 {
+        left: 300px;
+    }
+    .bloc06 .title3 {
+        left: 250px;
+    }
+    .bloc06 .text3 {
+        left: 70px;
+    }
+    .bloc06 .title4 {
+        left: 500px;
+    }
+    .bloc06 .text4 {
+        left: 340px; 
+    }
+    .bloc06 .title5 {
+         left: 250px;
+    }
+    .bloc06 .text5 {
+        left: 80px;
+    }
+    .bloc06 .title6 {
+        left: 480px;
+    }
+    .bloc06 .text6 {
+        left: 300px;
+    }
+    .bloc7text {
+        padding: 0 50px;
+    }
+  }
 
 
 

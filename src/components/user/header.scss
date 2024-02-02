@@ -25,3 +25,14 @@
 .nav a {
     text-decoration: none;
 }
+// ################## MEDIA QUERIES #########################
+/* ##### SMARTPHONES #### */
+@media (max-width: 768px) {
+    .nav img {
+        max-width: 80px;
+    }
+    .nav {
+        font-size: 0.8em;
+    }
+    
+}
